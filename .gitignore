@@ -1,4 +1,5 @@
 *.a
+opencv_sdk/
 
 # built application files
 *.apk
