@@ -33,7 +33,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
-import org.firstinspires.ftc.teamcode.HardwareFP2017;
+import org.firstinspires.ftc.teamcode.RobotConfig;
 
 /**
  * This file illustrates the concept of driving a path based on encoder counts.
@@ -62,11 +62,11 @@ import org.firstinspires.ftc.teamcode.HardwareFP2017;
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
 
-@Autonomous(name="Drive By Encoder - Wei", group="Pushbot")
-public class AutonModeWei extends LinearOpMode {
+@Autonomous(name="Auton Mode 0", group="Pushbot")
+public class AutonMode0 extends LinearOpMode {
 
     /* Declare OpMode members. */
-    HardwareFP2017          robot   = new HardwareFP2017();   // Use a Pushbot's hardware
+    RobotConfig             robot   = new RobotConfig();   // Use a Pushbot's hardware
     private ElapsedTime     runtime = new ElapsedTime();
 
     static final double     COUNTS_PER_MOTOR_REV    = 1440 ;    // eg: TETRIX Motor Encoder

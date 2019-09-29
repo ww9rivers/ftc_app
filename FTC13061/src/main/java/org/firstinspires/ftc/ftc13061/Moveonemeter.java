@@ -66,7 +66,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 public class Moveonemeter extends LinearOpMode {
 
     /* Declare OpMode members. */
-    HardwareFP2017         robot   = new HardwareFP2017();   // Use a Pushbot's hardware
+    RobotConfig             robot   = new RobotConfig();   // Use a Pushbot's hardware
     private ElapsedTime     runtime = new ElapsedTime();
 
     static final double     COUNTS_PER_MOTOR_REV    = 1440 ;    // eg: TETRIX Motor Encoder
